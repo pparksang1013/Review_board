@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "Suit";
+        font-style: normal;
+        font-weight: 100 900;
+        src: url("../assets/SUIT-Variable.woff2") format("woff2");
+    }
+}
