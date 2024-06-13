@@ -1,7 +1,8 @@
-export const getJson = () => {
-    fetch("http://localhost:3001/myApp")
-        .then((res) => res.json())
-        .then((res) => console.log(res));
-
-    return;
-};
+export async function getJson(url: string) {
+    try {
+        const response = await fetch(url).then((res) => res.json());
+        return response;
+    } catch {
+        return false;
+    }
+}
